@@ -10,8 +10,8 @@ spec:
         app: helloworld
     spec:
       containers:
-      - name: k8s-demo
-        image: wardviaene/k8s-demo
+      - name: docker-demo
+        image: kruttik/docker-demo
         ports:
         - name: nodejs-port
           containerPort: 3000

@@ -5,15 +5,15 @@ metadata:
 spec:
   replicas: 2
   selector:
-    app: helloworld
+    app: helloworld-replica
   template:
     metadata:
       labels:
-        app: helloworld
+        app: helloworld-replica
     spec:
       containers:
-      - name: k8s-demo
-        image: wardviaene/k8s-demo
+      - name: docker-demo
+        image: kruttik/docker-demo
         ports:
         - name: nodejs-port
           containerPort: 3000
